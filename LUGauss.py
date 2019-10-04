@@ -103,9 +103,10 @@ def LUGauss(a, etapas = False, mults=False):
     L = crearL(n)    
     b = sacarB(a, n)
     a, L = eliminacionGaussiana(a, L, etapas, mults)
-    print("Matriz L: ")
+    
+    #print("Matriz L: ")
     imprimirMatrizCuadrada(L,n)
-    print("Matriz A: ")
+    #print("Matriz A: ")
     imprimirMatrizCuadrada(a,n)
     z = sustitucionProgresiva(L,b,n)
     x = sustitucionRegresiva(a,z,n)
